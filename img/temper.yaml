@@ -1,31 +1,22 @@
 layers:
-  Dvorak:
-  - ['''', ',', ., P, Y, F, G, C, R, L]
+  Colemak:
+  - [Q, W, F, P, B, J, L, U, Y, '''']
   - - {t: A, h: LGUI}
-    - {t: O, h: LALT}
-    - {t: E, h: LCTRL}
-    - {t: U, h: LSHFT}
-    - I
-    - D
-    - {t: H, h: RSHFT}
-    - {t: T, h: RCTRL}
-    - {t: N, h: RALT}
-    - {t: S, h: RGUI}
-  - - {t: ':', s: ;}
-    - Q
-    - J
-    - K
-    - X
-    - B
+    - {t: R, h: LALT}
+    - {t: S, h: LCTRL}
+    - {t: T, h: LSHFT}
+    - G
     - M
-    - W
-    - V
-    - Z
+    - {t: N, h: RSHFT}
+    - {t: E, h: RCTRL}
+    - {t: I, h: RALT}
+    - {t: O, h: RGUI}
+  - [Z, X, C, D, V, K, H, ',', ., /]
   - - ESC
-    - {t: BSPC, s: DEL}
+    - {t: SPACE, s: '&dot_space'}
     - {t: TAB, h: Numpad, s: '~'}
     - {t: ENTER, h: Function}
-    - {t: SPACE, s: '&dot_space'}
+    - {t: BSPC, s: DEL}
     - {t: LSHFT, h: sticky, s: '&caps_word'}
   Numpad:
   - ['`', <, '>', '', '', '[', '7', '8', '9', ']']
@@ -69,43 +60,43 @@ layers:
 combos:
 - p: [6, 7]
   k: '{'
-  l: [Dvorak, Numpad]
+  l: [Colemak, Numpad]
 - p: [7, 8]
   k: '}'
-  l: [Dvorak, Numpad]
+  l: [Colemak, Numpad]
 - p: [5, 6]
   k: '['
-  l: [Dvorak]
+  l: [Colemak]
 - p: [8, 9]
   k: ']'
-  l: [Dvorak]
+  l: [Colemak]
 - p: [16, 17]
   k: (
-  l: [Dvorak, Numpad]
+  l: [Colemak, Numpad]
 - p: [17, 18]
   k: )
-  l: [Dvorak, Numpad]
+  l: [Colemak, Numpad]
 - p: [1, 2]
   k: <
-  l: [Dvorak]
+  l: [Colemak]
 - p: [2, 3]
   k: '>'
-  l: [Dvorak]
+  l: [Colemak]
 - p: [26, 27]
   k: _
-  l: [Dvorak, Numpad]
+  l: [Colemak, Numpad]
 - p: [27, 28]
   k: '='
-  l: [Dvorak, Numpad]
+  l: [Colemak, Numpad]
 - p: [11, 12]
-  k: LC(LEFT)
+  k: Ctl+ LEFT
   l: [Numpad, Function]
 - p: [12, 13]
-  k: LC(RIGHT)
+  k: Ctl+ RIGHT
   l: [Numpad, Function]
 - p: [11, 12]
   k: ←
-  l: [Dvorak]
+  l: [Colemak]
 - p: [12, 13]
   k: →
-  l: [Dvorak]
+  l: [Colemak]
