@@ -163,15 +163,15 @@ ZMK_BEHAVIOR(boot, tap_dance,
 
 ZMK_CONDITIONAL_LAYER(NUM FUN, SYS)
 
-ZMK_LAYER(Dvorak,
+ZMK_LAYER(Colemak,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-      &kp APOS      &kp COMMA      &kp DOT        &kp P         &kp Y             &kp F         &kp G         &kp C         &kp R         &kp L
+        &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y         &kp APOS
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &hml LGUI A   &hml LALT O  &hml LCTRL E  &hml LSHFT U      &kp I             &kp D     &hmr RSHFT H  &hmr RCTRL T   &hmr RALT N   &hmr RGUI S
+     &hml LGUI A   &hml LALT R  &hml LCTRL S  &hml LSHFT T      &kp G             &kp M     &hmr RSHFT N  &hmr RCTRL E   &hmr RALT I   &hmr RGUI O
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &colon_semi      &kp Q         &kp J         &kp K         &kp X             &kp B         &kp M         &kp W         &kp V         &kp Z
+        &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H       &kp COMMA      &kp DOT      &kp SLASH
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                   &kp ESC       &bs_del      &smart_tab      &lt FUN ENTER &smart_space   &shift_word
+                                   &kp ESC    &smart_space    &smart_tab      &lt FUN ENTER    &bs_del     &shift_word
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
 )
 
