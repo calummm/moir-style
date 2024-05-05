@@ -1,5 +1,5 @@
 layers:
-  Colemak:
+  ColemakDH:
   - [Q, W, F, P, B, J, L, U, Y, '''']
   - - {t: A, h: LGUI}
     - {t: R, h: LALT}
@@ -19,18 +19,18 @@ layers:
     - {t: BSPC, s: DEL}
     - {t: LSHFT, h: sticky, s: '&caps_word'}
   Numpad:
-  - ['`', <, '>', '', '', '[', '7', '8', '9', ']']
-  - - {t: LGUI, h: sticky}
-    - {t: LALT, h: sticky}
-    - {t: LCTRL, h: sticky}
-    - {t: LSHFT, h: sticky}
-    - ''
+  - [/, '7', '8', '9', '-', '[', '7', '8', '9', ']']
+  - - '*'
+    - '4'
+    - '5'
+    - '6'
+    - '='
     - {t: +, s: '='}
     - '4'
     - '5'
     - '6'
     - /
-  - ['', '', '', '', '', '-', '1', '2', '3', \]
+  - ['0', '1', '2', '3', ., '-', '1', '2', '3', \]
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
@@ -38,9 +38,9 @@ layers:
     - '0'
     - KP DOT
   Function:
-  - [PG UP, HOME, UP, END, '', '', F7, F8, F9, F12]
-  - [PG DN, LEFT, DOWN, RIGHT, '', '', F4, F5, F6, F11]
-  - ['', '', '', '', '', '', F1, F2, F3, F10]
+  - [F12, F7, F8, F9, '', PG UP, HOME, UP, END, '']
+  - [F11, F4, F5, F6, '', PG DN, LEFT, DOWN, RIGHT, '']
+  - [F10, F1, F2, F3, '', '', '', '', '', '']
   - - ''
     - ''
     - {t: ▽, type: trans}
@@ -48,7 +48,7 @@ layers:
     - ''
     - ''
   System:
-  - [BOOT, PREV, NEXT, PP, '', '', '', '', '', '']
+  - [BOOT, PREV, NEXT, PP, '', '', '', '', '', BOOT]
   - [BRI INC, MUTE, VOL DN, VOL UP, '', '', '', '', '', '']
   - [BRI DEC, BT CLR, BT PRV, BT NXT, '', '', '', '', '', '']
   - - ''
@@ -60,34 +60,34 @@ layers:
 combos:
 - p: [6, 7]
   k: '{'
-  l: [Colemak, Numpad]
+  l: [ColemakDH, Numpad]
 - p: [7, 8]
   k: '}'
-  l: [Colemak, Numpad]
+  l: [ColemakDH, Numpad]
 - p: [5, 6]
   k: '['
-  l: [Colemak]
+  l: [ColemakDH]
 - p: [8, 9]
   k: ']'
-  l: [Colemak]
+  l: [ColemakDH]
 - p: [16, 17]
   k: (
-  l: [Colemak, Numpad]
+  l: [ColemakDH, Numpad]
 - p: [17, 18]
   k: )
-  l: [Colemak, Numpad]
+  l: [ColemakDH, Numpad]
 - p: [1, 2]
   k: <
-  l: [Colemak]
+  l: [ColemakDH]
 - p: [2, 3]
   k: '>'
-  l: [Colemak]
+  l: [ColemakDH]
 - p: [26, 27]
   k: _
-  l: [Colemak, Numpad]
+  l: [ColemakDH, Numpad]
 - p: [27, 28]
   k: '='
-  l: [Colemak, Numpad]
+  l: [ColemakDH, Numpad]
 - p: [11, 12]
   k: Ctl+ LEFT
   l: [Numpad, Function]
@@ -96,7 +96,7 @@ combos:
   l: [Numpad, Function]
 - p: [11, 12]
   k: ←
-  l: [Colemak]
+  l: [ColemakDH]
 - p: [12, 13]
   k: →
-  l: [Colemak]
+  l: [ColemakDH]
