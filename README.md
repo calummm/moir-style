@@ -1,16 +1,17 @@
-Temper Settings
-===============
+# Temper Settings
 
 Controlling my [temper](https://github.com/raeedcho/temper), a split wireless-only
 mechanical keyboard with [nice!view](https://nicekeyboards.com/docs/nice-view/) displays.
 
- * Dvorak base layout
- * [timer-less home row mods](https://github.com/urob/zmk-config#timeless-homerow-mods)
- * sticky shift on right thumb, double-tap (or shift+tap) activates caps-word
- * shift+space morphs into dot+space+sticky-shift
+- Colemak-DH base layout
+- [timer-less home row mods](https://github.com/urob/zmk-config#timeless-homerow-mods)
+- sticky shift on right thumb, double-tap (or shift+tap) activates caps-word
+- shift+space morphs into dot+space+sticky-shift
+- one-handed southpaw numpad for spreadsheet entry
+- spaceship layout symbols on additional layer (todo)
+- gaming layer (todo)
 
 ![keymap image](img/temper.svg)
-
 
 ## Building
 
@@ -49,7 +50,6 @@ keymap -c img/keymap_drawer.config.yaml parse -c 10 -z config/temper.keymap > im
 keymap -c img/keymap_drawer.config.yaml draw -k chocofi img/temper.yaml > img/temper.svg
 ```
 
-
 ## Miscellaneous
 
 In MacOS, when a key is held down while entering text, a popup is shown which
@@ -62,6 +62,6 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 
 ## Resources
 
- * https://github.com/urob/zmk-config
- * https://github.com/caksoylar/keymap-drawer
-
+- https://github.com/tmcdonell/config-temper-zmk
+- https://github.com/urob/zmk-config
+- https://github.com/caksoylar/keymap-drawer
