@@ -1,6 +1,15 @@
 layers:
   ColemakDH:
-  - [Q, W, F, P, B, J, L, U, Y, '''']
+  - - Q
+    - W
+    - F
+    - P
+    - B
+    - J
+    - L
+    - U
+    - Y
+    - {t: '''', s: '"'}
   - - {t: A, h: LGUI}
     - {t: R, h: LALT}
     - {t: S, h: LCTRL}
@@ -11,36 +20,54 @@ layers:
     - {t: E, h: RCTRL}
     - {t: I, h: RALT}
     - {t: O, h: RGUI}
-  - [Z, X, C, D, V, K, H, ',', ., /]
+  - - Z
+    - X
+    - C
+    - D
+    - V
+    - K
+    - H
+    - {t: ',', s: \}
+    - {t: ., s: /}
+    - {t: ':', s: ;}
   - - ESC
     - {t: SPACE, s: '&dot_space'}
-    - {t: TAB, h: Numpad, s: '~'}
+    - {t: TAB, h: NumSym, s: '~'}
     - {t: ENTER, h: Function}
     - {t: BSPC, s: DEL}
     - {t: LSHFT, h: sticky, s: '&caps_word'}
-  Numpad:
-  - [/, '7', '8', '9', '-', '[', '7', '8', '9', ']']
+  NumSym:
+  - - /
+    - '7'
+    - '8'
+    - '9'
+    - {t: '-', s: _}
+    - ''
+    - '&kb AMPS'
+    - '&kb STAR'
+    - '&KP PIPE'
+    - {t: '`', s: '~'}
   - - '*'
     - '4'
     - '5'
     - '6'
-    - '='
     - {t: +, s: '='}
-    - '4'
-    - '5'
-    - '6'
-    - /
-  - ['0', '1', '2', '3', ., '-', '1', '2', '3', \]
+    - ''
+    - '&kb DOLLAR'
+    - '&kb PERCENT'
+    - '&kb CARET'
+    - ''
+  - ['0', '1', '2', '3', ., '', '&kb EXCL', '&kb AT', '&kb HASH', '']
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
     - {t: ▽, type: trans}
-    - '0'
-    - KP DOT
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
   Function:
-  - [F12, F7, F8, F9, '', PG UP, HOME, UP, END, '']
+  - [F12, F7, F8, F9, '', PG UP, HOME, UP, END, PSCRN]
   - [F11, F4, F5, F6, '', PG DN, LEFT, DOWN, RIGHT, '']
-  - [F10, F1, F2, F3, '', '', '', '', '', '']
+  - [F10, F1, F2, F3, '', '&KP LC(Z)', '&KP LC(V)', '&KP LC(C)', '&KP LC(X)', '&KP LC(Y)']
   - - ''
     - ''
     - {t: ▽, type: trans}
@@ -48,8 +75,8 @@ layers:
     - ''
     - ''
   System:
-  - [BOOT, PREV, NEXT, PP, '', '', '', '', '', BOOT]
-  - [BRI INC, MUTE, VOL DN, VOL UP, '', '', '', '', '', '']
+  - [BOOT, PREV, NEXT, PP, '', SLEEP, '', '', '', BOOT]
+  - [BRI INC, MUTE, VOL DN, VOL UP, '', AL LOCK, '', '', '', '']
   - [BRI DEC, BT CLR, BT PRV, BT NXT, '', '', '', '', '', '']
   - - ''
     - ''
@@ -60,10 +87,10 @@ layers:
 combos:
 - p: [6, 7]
   k: '{'
-  l: [ColemakDH, Numpad]
+  l: [ColemakDH, NumSym]
 - p: [7, 8]
   k: '}'
-  l: [ColemakDH, Numpad]
+  l: [ColemakDH, NumSym]
 - p: [5, 6]
   k: '['
   l: [ColemakDH]
@@ -72,10 +99,10 @@ combos:
   l: [ColemakDH]
 - p: [16, 17]
   k: (
-  l: [ColemakDH, Numpad]
+  l: [ColemakDH, NumSym]
 - p: [17, 18]
   k: )
-  l: [ColemakDH, Numpad]
+  l: [ColemakDH, NumSym]
 - p: [1, 2]
   k: <
   l: [ColemakDH]
@@ -84,16 +111,16 @@ combos:
   l: [ColemakDH]
 - p: [26, 27]
   k: _
-  l: [ColemakDH, Numpad]
+  l: [ColemakDH, NumSym]
 - p: [27, 28]
   k: '='
-  l: [ColemakDH, Numpad]
+  l: [ColemakDH, NumSym]
 - p: [11, 12]
   k: Ctl+ LEFT
-  l: [Numpad, Function]
+  l: [NumSym, Function]
 - p: [12, 13]
   k: Ctl+ RIGHT
-  l: [Numpad, Function]
+  l: [NumSym, Function]
 - p: [11, 12]
   k: ←
   l: [ColemakDH]
