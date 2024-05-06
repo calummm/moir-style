@@ -129,7 +129,7 @@ ZMK_BEHAVIOR(bs_del, mod_morph,
     )
 
 // tap: colon | shift + tap: semicolon
-SIMPLE_MORPH(colon_semi, SFT, &kp COLON, &kp SEMI)
+SIMPLE_MORPH(semi_colon, SFT, &kp SEMI, &kp COLON)
 
 // tap: plus | shift + tap: equal
 SIMPLE_MORPH(plus_equal, SFT, &kp PLUS, &kp EQUAL)
@@ -137,17 +137,20 @@ SIMPLE_MORPH(plus_equal, SFT, &kp PLUS, &kp EQUAL)
 // tap: ' | shift + tap: "
 SIMPLE_MORPH(quotes, SFT, &kp APOS, &kp DOUBLE_QUOTES)
 
-// tap: . | shift + tap: /
-SIMPLE_MORPH(dot_slash, SFT, &kp DOT, &kp SLASH)
-
-// tap: , | shift + tap: \
-SIMPLE_MORPH(comma_bksl, SFT, &kp COMMA, &kp BACKSLASH)
-
 // tap: - | shift + tap: _
 SIMPLE_MORPH(hyphen_under, SFT, &kp MINUS, &kp UNDER)
 
 // tap: ` | shift + tap: ~
 SIMPLE_MORPH(grave_tilde, SFT, &kp GRAVE, &kp TILDE)
+
+// tap: ` | shift + tap: ~
+SIMPLE_MORPH(slash_ques, SFT, &kp SLASH, &kp QMARK)
+
+// tap: . | shift + tap: /
+SIMPLE_MORPH(dot_slash, SFT, &kp DOT, &kp SLASH)
+
+// tap: , | shift + tap: \
+SIMPLE_MORPH(comma_bksl, SFT, &kp COMMA, &kp BACKSLASH)
 
 // tap: space | shift + tap: dot -> space -> sticky shift | hold: space
 SIMPLE_MORPH(smart_space, SFT, &kp SPACE, &dot_space)
@@ -181,11 +184,11 @@ ZMK_CONDITIONAL_LAYER(NUM FUN, SYS)
    
 ZMK_LAYER(ColemakDH,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-        &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y         &quotes
+        &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y        &quotes
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &hml LGUI A   &hml LALT R  &hml LCTRL S  &hml LSHFT T      &kp G             &kp M     &hmr RSHFT N  &hmr RCTRL E   &hmr RALT I   &hmr RGUI O
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H     &comma_bksl &dot_slash    &colon_semi
+        &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H      &kp COMMA    &kp DOT    &slash_ques
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                    &kp ESC    &smart_space    &smart_tab      &lt FUN ENTER    &bs_del     &shift_word
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -204,11 +207,11 @@ ZMK_LAYER(ColemakDH,
 // )
 ZMK_LAYER(NumSym,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-      &kp SLASH      &kp N7        &kp N8        &kp N9       &hyphen_under            XXX    &kp AMPS       &kp STAR     &kp PIPE    &grave_tilde
+      &kp SLASH      &kp N7        &kp N8        &kp N9       &hyphen_under        &kp TILDE    &kp AMPS       &kp STAR     &kp PIPE    &kp GRAVE
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &kp STAR      &kp N4        &kp N5        &kp N6        &plus_equal          XXX        &kp DOLLAR   &kp PERCENT    &kp CARET      XXX 
+      &kp STAR      &kp N4        &kp N5        &kp N6        &plus_equal          &kp PIPE        &kp DOLLAR   &kp PERCENT    &kp CARET      &kp COLON 
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       &kp N0        &kp N1        &kp N2        &kp N3          &kp DOT           XXX         &kp EXCL       &kp AT      &kp HASH       XXX 
+       &kp N0        &kp N1        &kp N2        &kp N3          &kp DOT           &kp QMARK         &kp EXCL       &kp AT      &kp HASH       &kp SEMI
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                      ___           ___           ___               ___            ___          ___
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -232,7 +235,7 @@ ZMK_LAYER(Function,
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &kp F11         &kp F4      &kp F5         &kp F6         XXX            &kp PG_DN     &kp LEFT      &kp DOWN      &kp RIGHT       XXX               
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       &kp F10          &kp F1     &kp F2         &kp F3         XXX            &KP LC(Z)     &KP LC(V)     &KP LC(C)     &KP LC(X)     &KP LC(Y)          
+       &kp F10          &kp F1     &kp F2         &kp F3         XXX            &kp LC(Z)     &kp LC(V)     &kp LC(C)     &kp LC(X)     &kp LC(Y)          
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                      XXX           XXX           ___               ___           XXX           XXX
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
