@@ -27,9 +27,9 @@ layers:
     - V
     - K
     - H
-    - {t: ',', s: \}
-    - {t: ., s: /}
-    - {t: ':', s: ;}
+    - ','
+    - .
+    - {t: /, s: '?'}
   - - ESC
     - {t: SPACE, s: '&dot_space'}
     - {t: TAB, h: NumSym, s: '~'}
@@ -42,22 +42,22 @@ layers:
     - '8'
     - '9'
     - {t: '-', s: _}
-    - ''
+    - '~'
     - '&'
     - '*'
     - '|'
-    - {t: '`', s: '~'}
+    - '`'
   - - '*'
     - '4'
     - '5'
     - '6'
     - {t: +, s: '='}
-    - ''
+    - '|'
     - $
     - '%'
     - ^
-    - ''
-  - ['0', '1', '2', '3', ., '', '!', '@', '#', '']
+    - ':'
+  - ['0', '1', '2', '3', ., '?', '!', '@', '#', ;]
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
@@ -67,7 +67,7 @@ layers:
   Function:
   - [F12, F7, F8, F9, '', PG UP, HOME, UP, END, PSCRN]
   - [F11, F4, F5, F6, '', PG DN, LEFT, DOWN, RIGHT, '']
-  - [F10, F1, F2, F3, '', '&KP LC(Z)', '&KP LC(V)', '&KP LC(C)', '&KP LC(X)', '&KP LC(Y)']
+  - [F10, F1, F2, F3, '', Ctl+ Z, Ctl+ V, Ctl+ C, Ctl+ X, Ctl+ Y]
   - - ''
     - ''
     - {t: ▽, type: trans}
