@@ -43,8 +43,8 @@ layers:
     - '9'
     - {t: '-', s: _}
     - ''
-    - '&kb AMPS'
-    - '&kb STAR'
+    - '&'
+    - '*'
     - '&KP PIPE'
     - {t: '`', s: '~'}
   - - '*'
@@ -53,11 +53,11 @@ layers:
     - '6'
     - {t: +, s: '='}
     - ''
-    - '&kb DOLLAR'
-    - '&kb PERCENT'
-    - '&kb CARET'
+    - $
+    - '%'
+    - ^
     - ''
-  - ['0', '1', '2', '3', ., '', '&kb EXCL', '&kb AT', '&kb HASH', '']
+  - ['0', '1', '2', '3', ., '', '!', '@', '#', '']
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
