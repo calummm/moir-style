@@ -141,7 +141,7 @@ SIMPLE_MORPH(quotes, SFT, &kp APOS, &kp DOUBLE_QUOTES)
 SIMPLE_MORPH(dot_slash, SFT, &kp DOT, &kp SLASH)
 
 // tap: , | shift + tap: \
-SIMPLE_MORPH(comma_bkslash, SFT, &kp COMMA, &kp BACKSLASH)
+SIMPLE_MORPH(comma_bksl, SFT, &kp COMMA, &kp BACKSLASH)
 
 // tap: - | shift + tap: _
 SIMPLE_MORPH(hyphen_under, SFT, &kp MINUS, &kp UNDER)
@@ -185,7 +185,7 @@ ZMK_LAYER(ColemakDH,
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &hml LGUI A   &hml LALT R  &hml LCTRL S  &hml LSHFT T      &kp G             &kp M     &hmr RSHFT N  &hmr RCTRL E   &hmr RALT I   &hmr RGUI O
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-        &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H     &comma_bkslash &dot_slash    &colon_semi
+        &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H     &comma_bksl &dot_slash    &colon_semi
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                    &kp ESC    &smart_space    &smart_tab      &lt FUN ENTER    &bs_del     &shift_word
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
@@ -204,7 +204,7 @@ ZMK_LAYER(ColemakDH,
 // )
 ZMK_LAYER(NumSym,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-      &kp SLASH      &kp N7        &kp N8        &kp N9       &hyphen_under            XXX    &kp AMPS       &kp STAR     &KP PIPE    &grave_tilde
+      &kp SLASH      &kp N7        &kp N8        &kp N9       &hyphen_under            XXX    &kp AMPS       &kp STAR     &kp PIPE    &grave_tilde
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
       &kp STAR      &kp N4        &kp N5        &kp N6        &plus_equal          XXX        &kp DOLLAR   &kp PERCENT    &kp CARET      XXX 
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
