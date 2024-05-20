@@ -31,7 +31,7 @@ layers:
     - {t: ., s: /}
     - {t: /, s: '?'}
   - - ESC
-    - {t: SPACE, s: '&dot_space'}
+    - {t: SPACE, h: Navigation}
     - {t: TAB, h: Num, s: '~'}
     - {t: ENTER, h: Sym}
     - {t: BSPC, h: Num}
@@ -42,68 +42,32 @@ layers:
     - '8'
     - '9'
     - {t: '-', s: _}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
   - - '*'
     - '4'
     - '5'
     - '6'
     - {t: +, s: '='}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - '0'
-    - '1'
-    - '2'
-    - '3'
-    - .
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  - ['0', '1', '2', '3', ., '', '', '', '', '']
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - ''
     - {t: ▽, type: trans}
   Sym:
-  - - '~'
-    - '&'
-    - '*'
-    - '|'
-    - '`'
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - '|'
-    - $
-    - '%'
-    - ^
-    - ':'
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - '?'
-    - '!'
-    - '@'
-    - '#'
-    - ;
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+  - ['~', '&', '*', '|', '`', '', '', '', '', '']
+  - ['|', $, '%', ^, ':', '', '', '', '', '']
+  - ['?', '!', '@', '#', ;, '', '', '', '', '']
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -111,36 +75,9 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   Function:
-  - - F12
-    - F7
-    - F8
-    - F9
-    - ''
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - F11
-    - F4
-    - F5
-    - F6
-    - ''
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - F10
-    - F1
-    - F2
-    - F3
-    - ''
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+  - [F12, F7, F8, F9, '', '', '', '', '', '']
+  - [F11, F4, F5, F6, '', '', '', '', '', '']
+  - [F10, F1, F2, F3, '', '', '', '', '', '']
   - - ''
     - ''
     - {t: ▽, type: trans}
@@ -148,38 +85,11 @@ layers:
     - ''
     - {type: held}
   Navigation:
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - PG UP
-    - HOME
-    - UP
-    - END
-    - PSCRN
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - PG DN
-    - LEFT
-    - DOWN
-    - RIGHT
-    - ''
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - Ctl+ Z
-    - Ctl+ V
-    - Ctl+ C
-    - Ctl+ X
-    - Ctl+ Y
+  - ['', '', '', '', '', PG UP, HOME, UP, END, PSCRN]
+  - ['', '', '', '', '', PG DN, LEFT, DOWN, RIGHT, '']
+  - ['', '', '', '', '', Ctl+ Z, Ctl+ V, Ctl+ C, Ctl+ X, Ctl+ Y]
   - - ''
-    - ''
+    - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - ''
