@@ -27,51 +27,161 @@ layers:
     - V
     - K
     - H
-    - ','
-    - .
+    - {t: ',', s: \}
+    - {t: ., s: /}
     - {t: /, s: '?'}
   - - ESC
     - {t: SPACE, s: '&dot_space'}
-    - {t: TAB, h: NumSym, s: '~'}
-    - {t: ENTER, h: Function}
-    - {t: BSPC, s: DEL}
-    - {t: LSHFT, h: sticky, s: '&caps_word'}
-  NumSym:
+    - {t: TAB, h: Num, s: '~'}
+    - {t: ENTER, h: Sym}
+    - {t: BSPC, h: Num}
+    - {t: DEL, h: Function}
+  Num:
   - - /
     - '7'
     - '8'
     - '9'
     - {t: '-', s: _}
-    - '~'
-    - '&'
-    - '*'
-    - '|'
-    - '`'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
   - - '*'
     - '4'
     - '5'
     - '6'
     - {t: +, s: '='}
-    - '|'
-    - $
-    - '%'
-    - ^
-    - ':'
-  - ['0', '1', '2', '3', ., '?', '!', '@', '#', ;]
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - '0'
+    - '1'
+    - '2'
+    - '3'
+    - .
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
+  Sym:
+  - - '~'
+    - '&'
+    - '*'
+    - '|'
+    - '`'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - '|'
+    - $
+    - '%'
+    - ^
+    - ':'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - '?'
+    - '!'
+    - '@'
+    - '#'
+    - ;
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
   Function:
-  - [F12, F7, F8, F9, '', PG UP, HOME, UP, END, PSCRN]
-  - [F11, F4, F5, F6, '', PG DN, LEFT, DOWN, RIGHT, '']
-  - [F10, F1, F2, F3, '', Ctl+ Z, Ctl+ V, Ctl+ C, Ctl+ X, Ctl+ Y]
+  - - F12
+    - F7
+    - F8
+    - F9
+    - ''
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - F11
+    - F4
+    - F5
+    - F6
+    - ''
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - F10
+    - F1
+    - F2
+    - F3
+    - ''
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
   - - ''
     - ''
     - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - ''
     - {type: held}
+  Navigation:
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - PG UP
+    - HOME
+    - UP
+    - END
+    - PSCRN
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - PG DN
+    - LEFT
+    - DOWN
+    - RIGHT
+    - ''
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - Ctl+ Z
+    - Ctl+ V
+    - Ctl+ C
+    - Ctl+ X
+    - Ctl+ Y
+  - - ''
+    - ''
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - ''
     - ''
   System:
@@ -81,16 +191,16 @@ layers:
   - - ''
     - ''
     - {type: held}
+    - ''
+    - ''
     - {type: held}
-    - ''
-    - ''
 combos:
 - p: [6, 7]
   k: '{'
-  l: [ColemakDH, NumSym]
+  l: [ColemakDH, Num]
 - p: [7, 8]
   k: '}'
-  l: [ColemakDH, NumSym]
+  l: [ColemakDH, Num]
 - p: [5, 6]
   k: '['
   l: [ColemakDH]
@@ -99,10 +209,10 @@ combos:
   l: [ColemakDH]
 - p: [16, 17]
   k: (
-  l: [ColemakDH, NumSym]
+  l: [ColemakDH, Num]
 - p: [17, 18]
   k: )
-  l: [ColemakDH, NumSym]
+  l: [ColemakDH, Num]
 - p: [1, 2]
   k: <
   l: [ColemakDH]
@@ -111,16 +221,16 @@ combos:
   l: [ColemakDH]
 - p: [26, 27]
   k: _
-  l: [ColemakDH, NumSym]
+  l: [ColemakDH, Num]
 - p: [27, 28]
   k: '='
-  l: [ColemakDH, NumSym]
+  l: [ColemakDH, Num]
 - p: [11, 12]
   k: Ctl+ LEFT
-  l: [NumSym, Function]
+  l: [Num, Function]
 - p: [12, 13]
   k: Ctl+ RIGHT
-  l: [NumSym, Function]
+  l: [Num, Function]
 - p: [11, 12]
   k: ←
   l: [ColemakDH]
