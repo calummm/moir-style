@@ -147,10 +147,10 @@ SIMPLE_MORPH(grave_tilde, SFT, &kp GRAVE, &kp TILDE)
 SIMPLE_MORPH(slash_ques, SFT, &kp SLASH, &kp QMARK)
 
 // tap: . | shift + tap: :
-SIMPLE_MORPH(dot_colon, SFT, &kp DOT, &kp SLASH)
+SIMPLE_MORPH(dot_colon, SFT, &kp DOT, &kp COLON)
 
 // tap: , | shift + tap: ;
-SIMPLE_MORPH(comma_semi, SFT, &kp COMMA, &kp BACKSLASH)
+SIMPLE_MORPH(comma_semi, SFT, &kp COMMA, &kp SEMI)
 
 // tap: space | shift + tap: dot -> space -> sticky shift | hold: space
 SIMPLE_MORPH(smart_space, SFT, &kp SPACE, &dot_space)
