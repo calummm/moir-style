@@ -48,27 +48,27 @@
 #define COMBO_TERM_SLOW 50
 
 // left and right brace { }
-ZMK_COMBO(lbrc, &kp LBRC, RT1 RT2, DEF NUM, COMBO_TERM_FAST)
-ZMK_COMBO(rbrc, &kp RBRC, RT2 RT3, DEF NUM, COMBO_TERM_FAST)
+ZMK_COMBO(lbrc, &kp LBRC, RT1 RT2, DEF NUMSYM, COMBO_TERM_FAST)
+ZMK_COMBO(rbrc, &kp RBRC, RT2 RT3, DEF NUMSYM, COMBO_TERM_FAST)
 
 // left and right bracket [ ]
 ZMK_COMBO(lbkt, &kp LBKT, RT0 RT1, DEF, COMBO_TERM_FAST)
 ZMK_COMBO(rbkt, &kp RBKT, RT3 RT4, DEF, COMBO_TERM_FAST)
 
 // left and right parenthesis ( )
-ZMK_COMBO(lpar, &kp LPAR, RM1 RM2, DEF NUM, COMBO_TERM_FAST)
-ZMK_COMBO(rpar, &kp RPAR, RM2 RM3, DEF NUM, COMBO_TERM_FAST)
+ZMK_COMBO(lpar, &kp LPAR, RM1 RM2, DEF NUMSYM, COMBO_TERM_FAST)
+ZMK_COMBO(rpar, &kp RPAR, RM2 RM3, DEF NUMSYM, COMBO_TERM_FAST)
 
 // left and right less-then and greater-then < >
 ZMK_COMBO(lt, &kp LT, LT3 LT2, DEF, COMBO_TERM_FAST)
 ZMK_COMBO(gt, &kp GT, LT2 LT1, DEF, COMBO_TERM_FAST)
 
-ZMK_COMBO(under, &kp UNDER, RB1 RB2, DEF NUM, COMBO_TERM_FAST)
-ZMK_COMBO(equal, &kp EQUAL, RB2 RB3, DEF NUM, COMBO_TERM_FAST)
+ZMK_COMBO(under, &kp UNDER, RB1 RB2, DEF NUMSYM, COMBO_TERM_FAST)
+ZMK_COMBO(equal, &kp EQUAL, RB2 RB3, DEF NUMSYM, COMBO_TERM_FAST)
 
-// macOS shift space left and right
-ZMK_COMBO(workspace_left,  &kp LC(LEFT),  LM3 LM2, NUM FUN, COMBO_TERM_FAST)
-ZMK_COMBO(workspace_right, &kp LC(RIGHT), LM2 LM1, NUM FUN, COMBO_TERM_FAST)
+// // macOS shift space left and right
+// ZMK_COMBO(workspace_left,  &kp LC(LEFT),  LM3 LM2, NUM FUN, COMBO_TERM_FAST)
+// ZMK_COMBO(workspace_right, &kp LC(RIGHT), LM2 LM1, NUM FUN, COMBO_TERM_FAST)
 
 // left and right arrow '->'
 ZMK_BEHAVIOR(larr, macro,
