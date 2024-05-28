@@ -27,8 +27,8 @@ layers:
     - V
     - K
     - H
-    - {t: ',', s: \}
-    - {t: ., s: /}
+    - {t: ',', s: ;}
+    - {t: ., s: ':'}
     - {t: /, s: '?'}
   - - {t: ESC, h: System}
     - {t: SPACE, h: FunNav}
