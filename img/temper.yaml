@@ -61,7 +61,7 @@ layers:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
-    - {t: ▽, type: trans}
+    - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   FunNav:
@@ -72,7 +72,7 @@ layers:
     - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - {type: held}
     - {t: ▽, type: trans}
   System:
   - [BOOT, PREV, NEXT, PP, '', SLEEP, '', '', '', BOOT]
@@ -83,7 +83,7 @@ layers:
     - ''
     - ''
     - ''
-    - ''
+    - {type: held}
 combos:
 - p: [6, 7]
   k: '{'
