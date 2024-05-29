@@ -161,6 +161,7 @@ parse_config:
   trans_legend:
     t: ▽
     type: trans
+  mark_alternate_layer_activators: true
   qmk_remove_keycode_prefix:
     - KC_
   qmk_keycode_map:
