@@ -152,6 +152,7 @@ parse_config:
       "&rarr": "→",
       "&kp LC(C)": "Copy",
       "&kp LC(V)": "Paste",
+      "&kp LC(X)": "Cut",
       "&kp LC(Z)": "Undo",
       "&kp LC(Y)": "Redo",
     }
@@ -160,7 +161,6 @@ parse_config:
   trans_legend:
     t: ▽
     type: trans
-  mark_alternate_layer_activators: false
   qmk_remove_keycode_prefix:
     - KC_
   qmk_keycode_map:
