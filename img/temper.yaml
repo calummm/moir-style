@@ -67,7 +67,7 @@ layers:
   FunNav:
   - [F12, F7, F8, F9, '', PG UP, HOME, UP, END, PSCRN]
   - [F11, F4, F5, F6, '', PG DN, LEFT, DOWN, RIGHT, '']
-  - [F10, F1, F2, F3, '', Undo, Paste, Copy, Ctl+ X, Redo]
+  - [F10, F1, F2, F3, '', Undo, Paste, Copy, Cut, Redo]
   - - {t: ▽, type: trans}
     - {type: held}
     - {t: ▽, type: trans}
