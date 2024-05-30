@@ -131,7 +131,6 @@ draw_config:
         visibility: hidden;
     }
     /* End Tabler Icons Cleanup */
-  svg_extra_style: ""
   shrink_wide_legends: 7
   glyph_tap_size: 14
   glyph_hold_size: 12
