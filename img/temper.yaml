@@ -52,7 +52,7 @@ layers:
     - '5'
     - '6'
     - {t: +, s: '='}
-    - '|'
+    - \
     - $
     - '%'
     - ^
@@ -75,8 +75,8 @@ layers:
     - {type: held alternate}
     - {t: ▽, type: trans}
   System:
-  - [BOOT, PREV, NEXT, PP, '', SLEEP, '', '', '', BOOT]
-  - [BRI INC, MUTE, VOL DN, VOL UP, '', AL LOCK, '', '', '', '']
+  - [BOOT, PREV, NEXT, PP, '', SLEEP, Gui+Sft+ LEFT, Gui+ UP, Gui+Sft+ RIGHT, BOOT]
+  - [BRI INC, MUTE, VOL DN, VOL UP, '', AL LOCK, Gui+ LEFT, Gui+ DOWN, Gui+ RIGHT, '']
   - [BRI DEC, BT CLR, BT PRV, BT NXT, '', '', '', '', '', '']
   - - {type: held}
     - ''
