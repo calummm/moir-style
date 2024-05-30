@@ -29,7 +29,7 @@ draw_config:
     rel_h: 12
     rx: 4
     ry: 4
-  svg_extra_style: "rect.held.alternate { fill: purple; }"
+  svg_extra_style: "rect.held.alternate { fill: #478583; }"
   svg_style: |
     /* inherit to force styles through use tags */
     svg path {
