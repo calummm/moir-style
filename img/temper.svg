@@ -111,7 +111,7 @@ text.trans { fill: #7e8184; }
 path.combo { stroke: #7f7f7f; }
 
 }
-rect.held.alternate { fill: purple; }</style>
+rect.held.alternate { fill: #478583; }</style>
 <g transform="translate(30, 0)" class="layer-ColemakDH">
 <text x="0" y="28" class="label">ColemakDH:</text>
 <g transform="translate(0, 56)">
