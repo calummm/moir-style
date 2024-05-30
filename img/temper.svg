@@ -676,19 +676,22 @@ rect.held.alternate { fill: #478583; }</style>
 <g transform="translate(580, 50)" class="key keypos-6">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 88%">Gui+Sft+</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">LEFT</tspan>
+<tspan x="0" dy="-1.2em">Window</tspan><tspan x="0" dy="1.2em">Prev</tspan>
+<tspan x="0" dy="1.2em">Monitor</tspan>
 </text>
 </g>
 <g transform="translate(639, 28)" class="key keypos-7">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Gui+</tspan><tspan x="0" dy="1.2em">UP</tspan>
+<tspan x="0" dy="-1.2em">Window</tspan><tspan x="0" dy="1.2em">Snap</tspan>
+<tspan x="0" dy="1.2em">Up</tspan>
 </text>
 </g>
 <g transform="translate(698, 48)" class="key keypos-8">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 88%">Gui+Sft+</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">RIGHT</tspan>
+<tspan x="0" dy="-1.2em">Window</tspan><tspan x="0" dy="1.2em">Next</tspan>
+<tspan x="0" dy="1.2em">Monitor</tspan>
 </text>
 </g>
 <g transform="translate(758, 87)" class="key keypos-9">
@@ -729,19 +732,22 @@ rect.held.alternate { fill: #478583; }</style>
 <g transform="translate(580, 106)" class="key keypos-16">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Gui+</tspan><tspan x="0" dy="1.2em">LEFT</tspan>
+<tspan x="0" dy="-1.2em">Window</tspan><tspan x="0" dy="1.2em">Snap</tspan>
+<tspan x="0" dy="1.2em">Left</tspan>
 </text>
 </g>
 <g transform="translate(639, 84)" class="key keypos-17">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Gui+</tspan><tspan x="0" dy="1.2em">DOWN</tspan>
+<tspan x="0" dy="-1.2em">Window</tspan><tspan x="0" dy="1.2em">Snap</tspan>
+<tspan x="0" dy="1.2em">Down</tspan>
 </text>
 </g>
 <g transform="translate(698, 104)" class="key keypos-18">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Gui+</tspan><tspan x="0" dy="1.2em">RIGHT</tspan>
+<tspan x="0" dy="-1.2em">Window</tspan><tspan x="0" dy="1.2em">Snap</tspan>
+<tspan x="0" dy="1.2em">Right</tspan>
 </text>
 </g>
 <g transform="translate(758, 143)" class="key keypos-19">
@@ -779,12 +785,18 @@ rect.held.alternate { fill: #478583; }</style>
 </g>
 <g transform="translate(580, 162)" class="key keypos-26">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em" style="font-size: 78%">Previous</tspan><tspan x="0" dy="1.2em" style="font-size: 78%">Workspace</tspan>
+</text>
 </g>
 <g transform="translate(639, 140)" class="key keypos-27">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 </g>
 <g transform="translate(698, 160)" class="key keypos-28">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em" style="font-size: 78%">Next</tspan><tspan x="0" dy="1.2em" style="font-size: 78%">Workspace</tspan>
+</text>
 </g>
 <g transform="translate(758, 199)" class="key keypos-29">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
