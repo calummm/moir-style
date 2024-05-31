@@ -609,11 +609,11 @@ rect.held.alternate { fill: #478583; }</style>
 </g>
 <g transform="translate(580, 162)" class="key keypos-26">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Paste</text>
+<text x="0" y="0" class="key tap">Copy</text>
 </g>
 <g transform="translate(639, 140)" class="key keypos-27">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Copy</text>
+<text x="0" y="0" class="key tap">Paste</text>
 </g>
 <g transform="translate(698, 160)" class="key keypos-28">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -786,20 +786,26 @@ rect.held.alternate { fill: #478583; }</style>
 <g transform="translate(580, 162)" class="key keypos-26">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 78%">Previous</tspan><tspan x="0" dy="1.2em" style="font-size: 78%">Workspace</tspan>
+<tspan x="0" dy="-0.6em">Shift</tspan><tspan x="0" dy="1.2em">Copy</tspan>
 </text>
 </g>
 <g transform="translate(639, 140)" class="key keypos-27">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">Shift</tspan><tspan x="0" dy="1.2em">Paste</tspan>
+</text>
 </g>
 <g transform="translate(698, 160)" class="key keypos-28">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 78%">Next</tspan><tspan x="0" dy="1.2em" style="font-size: 78%">Workspace</tspan>
+<tspan x="0" dy="-0.6em" style="font-size: 78%">Previous</tspan><tspan x="0" dy="1.2em" style="font-size: 78%">Workspace</tspan>
 </text>
 </g>
 <g transform="translate(758, 199)" class="key keypos-29">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em" style="font-size: 78%">Next</tspan><tspan x="0" dy="1.2em" style="font-size: 78%">Workspace</tspan>
+</text>
 </g>
 <g transform="translate(188, 228)" class="key held keypos-30">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key held"/>
