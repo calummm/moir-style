@@ -37,7 +37,7 @@ layers:
     - {t: BSPC, h: FunNav}
     - {t: DEL, h: System}
   NumSym:
-  - [/, '7', '8', '9', HYPEN, '~', '&', '*', '|', '`']
+  - [/, '7', '8', '9', HYPHEN, '~', '&', '*', '|', '`']
   - ['*', '4', '5', '6', '&kb PLUS', \, $, '%', ^, ':']
   - ['0', '1', '2', '3', ., '?', '!', '@', '#', ;]
   - - {t: ▽, type: trans}
@@ -89,7 +89,7 @@ combos:
   k: '~'
   l: [ColemakDH, NumSym]
 - p: [22, 23]
-  k: HYPEN
+  k: HYPHEN
   l: [ColemakDH, NumSym]
 - p: [1, 2]
   k: <
