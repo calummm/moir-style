@@ -59,10 +59,10 @@ ZMK_COMBO(rbkt, &kp RBKT, RT3 RT4, DEF NUMSYM, COMBO_TERM_FAST)
 ZMK_COMBO(lpar, &kp LPAR, RM1 RM2, DEF NUMSYM, COMBO_TERM_FAST)
 ZMK_COMBO(rpar, &kp RPAR, RM2 RM3, DEF NUMSYM, COMBO_TERM_FAST)
 
-// tilde
+// tilde ~
 ZMK_COMBO(tilde, &kp TILDE, LB3 LB2, DEF NUMSYM, COMBO_TERM_FAST)
-// hypen
-ZMK_COMBO(hypen, &kp HYPEN, LB2 LB1, DEF NUMSYM, COMBO_TERM_FAST)
+// HYPHEN -
+ZMK_COMBO(hyphen, &kp HYPHEN, LB2 LB1, DEF NUMSYM, COMBO_TERM_FAST)
 
 
 // left and right less-then and greater-then < >
@@ -185,7 +185,7 @@ ZMK_LAYER(ColemakDH,
 
 ZMK_LAYER(NumSym,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-      &kp SLASH      &kp N7        &kp N8        &kp N9     &kp HYPEN          &kp TILDE     &kp AMPS       &kp STAR      &kp PIPE     &kp GRAVE
+      &kp SLASH      &kp N7        &kp N8        &kp N9     &kp HYPHEN          &kp TILDE     &kp AMPS       &kp STAR      &kp PIPE     &kp GRAVE
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
       &kp STAR      &kp N4         &kp N5        &kp N6      &kb PLUS          &kp BACKSLASH   &kp DOLLAR   &kp PERCENT    &kp CARET     &kp COLON
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
