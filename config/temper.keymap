@@ -52,12 +52,18 @@ ZMK_COMBO(lbrc, &kp LBRC, RT1 RT2, DEF NUMSYM, COMBO_TERM_FAST)
 ZMK_COMBO(rbrc, &kp RBRC, RT2 RT3, DEF NUMSYM, COMBO_TERM_FAST)
 
 // left and right bracket [ ]
-ZMK_COMBO(lbkt, &kp LBKT, RT0 RT1, DEF, COMBO_TERM_FAST)
-ZMK_COMBO(rbkt, &kp RBKT, RT3 RT4, DEF, COMBO_TERM_FAST)
+ZMK_COMBO(lbkt, &kp LBKT, RT0 RT1, DEF NUMSYM, COMBO_TERM_FAST)
+ZMK_COMBO(rbkt, &kp RBKT, RT3 RT4, DEF NUMSYM, COMBO_TERM_FAST)
 
 // left and right parenthesis ( )
 ZMK_COMBO(lpar, &kp LPAR, RM1 RM2, DEF NUMSYM, COMBO_TERM_FAST)
 ZMK_COMBO(rpar, &kp RPAR, RM2 RM3, DEF NUMSYM, COMBO_TERM_FAST)
+
+// tilde
+ZMK_COMBO(lpar, &kp TILDE, LB3 LB2, DEF NUMSYM, COMBO_TERM_FAST)
+// hypen
+ZMK_COMBO(lpar, &kp HYPEN, LB2 LB1, DEF NUMSYM, COMBO_TERM_FAST)
+
 
 // left and right less-then and greater-then < >
 ZMK_COMBO(lt, &kp LT, LT3 LT2, DEF, COMBO_TERM_FAST)
@@ -179,9 +185,9 @@ ZMK_LAYER(ColemakDH,
 
 ZMK_LAYER(NumSym,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-      &kp SLASH      &kp N7        &kp N8        &kp N9     &hyphen_under       &kp TILDE     &kp AMPS       &kp STAR      &kp PIPE     &kp GRAVE
+      &kp SLASH      &kp N7        &kp N8        &kp N9     &kp HYPEN          &kp TILDE     &kp AMPS       &kp STAR      &kp PIPE     &kp GRAVE
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &kp STAR      &kp N4         &kp N5        &kp N6      &plus_equal      &kp BACKSLASH   &kp DOLLAR   &kp PERCENT    &kp CARET     &kp COLON
+      &kp STAR      &kp N4         &kp N5        &kp N6      &kb PLUS          &kp BACKSLASH   &kp DOLLAR   &kp PERCENT    &kp CARET     &kp COLON
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &kp N0        &kp N1        &kp N2        &kp N3        &kp DOT          &kp QMARK     &kp EXCL        &kp AT      &kp HASH       &kp SEMI
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
