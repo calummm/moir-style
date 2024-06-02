@@ -38,7 +38,7 @@ layers:
     - {t: DEL, h: System}
   NumSym:
   - [/, '7', '8', '9', '-', '~', '&', '*', '|', '`']
-  - ['*', '4', '5', '6', '&kb PLUS', \, $, '%', ^, ':']
+  - ['*', '4', '5', '6', +, \, $, '%', ^, ':']
   - ['0', '1', '2', '3', ., '?', '!', '@', '#', ;]
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -85,17 +85,23 @@ combos:
 - p: [17, 18]
   k: )
   l: [ColemakDH, NumSym]
-- p: [21, 22]
+- p: [11, 12]
   k: '~'
-  l: [ColemakDH, NumSym]
-- p: [22, 23]
+  l: [ColemakDH]
+- p: [12, 13]
   k: '-'
-  l: [ColemakDH, NumSym]
+  l: [ColemakDH]
 - p: [1, 2]
   k: <
   l: [ColemakDH]
 - p: [2, 3]
   k: '>'
+  l: [ColemakDH]
+- p: [21, 22]
+  k: \
+  l: [ColemakDH]
+- p: [22, 23]
+  k: /
   l: [ColemakDH]
 - p: [26, 27]
   k: _
@@ -103,9 +109,9 @@ combos:
 - p: [27, 28]
   k: '='
   l: [ColemakDH, NumSym]
-- p: [11, 12]
+- p: [10, 11]
   k: ←
   l: [ColemakDH]
-- p: [12, 13]
+- p: [13, 14]
   k: →
   l: [ColemakDH]
