@@ -10,16 +10,7 @@ layers:
     - U
     - Y
     - {t: '''', s: '"'}
-  - - {t: A, h: LGUI}
-    - {t: R, h: LALT}
-    - {t: S, h: LCTRL}
-    - {t: T, h: LSHFT}
-    - G
-    - M
-    - {t: N, h: RSHFT}
-    - {t: E, h: RCTRL}
-    - {t: I, h: RALT}
-    - {t: O, h: RGUI}
+  - [A, R, S, T, G, M, N, E, I, O]
   - - Z
     - X
     - C
@@ -30,20 +21,20 @@ layers:
     - {t: ',', s: ;}
     - {t: ., s: ':'}
     - {t: /, s: '?'}
-  - - {t: ESC, h: System}
-    - {t: SPACE, h: FunNav}
-    - {t: TAB, h: NumSym}
-    - {t: ENTER, h: NumSym}
+  - - {t: ESC, h: NumSym}
+    - {t: LSHFT, h: SPACE}
+    - {t: LCTRL, h: TAB}
+    - {t: ENTER, h: LALT}
     - {t: BSPC, h: FunNav}
-    - {t: DEL, h: System}
+    - {t: LGUI, h: DEL}
   NumSym:
   - [/, '7', '8', '9', '-', '~', '&', '*', '|', '`']
   - ['*', '4', '5', '6', +, \, $, '%', ^, ':']
   - ['0', '1', '2', '3', ., '?', '!', '@', '#', ;]
-  - - {t: ▽, type: trans}
+  - - {type: held}
     - {t: ▽, type: trans}
-    - {type: held}
-    - {type: held alternate}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   FunNav:
@@ -51,21 +42,16 @@ layers:
   - [F11, F4, F5, F6, '', PG DN, LEFT, DOWN, RIGHT, '']
   - [F10, F1, F2, F3, '', Undo, Copy, Paste, Cut, Redo]
   - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {type: held}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {type: held alternate}
     - {t: ▽, type: trans}
   System:
   - [BOOT, PREV, NEXT, PP, '', SLEEP, Window Prev Monitor, Window Snap Up, Window Next Monitor, BOOT]
   - [BRI INC, MUTE, VOL DN, VOL UP, '', AL LOCK, Window Snap Left, Window Snap Down, Window Snap Right, '']
   - [BRI DEC, BT CLR, BT PRV, BT NXT, '', '', Shift Copy, Shift Paste, Previous Workspace, Next Workspace]
-  - - {type: held}
-    - ''
-    - ''
-    - ''
-    - ''
-    - {type: held alternate}
+  - ['', '', '', '', '', '']
 combos:
 - p: [6, 7]
   k: '{'
