@@ -22,11 +22,11 @@ layers:
     - {t: ., s: ':'}
     - {t: /, s: '?'}
   - - {t: ESC, h: NumSym}
-    - {t: LSHFT, h: SPACE}
-    - {t: LCTRL, h: TAB}
+    - {t: SPACE, h: LSHFT}
+    - {t: TAB, h: LCTRL}
     - {t: ENTER, h: LALT}
     - {t: BSPC, h: FunNav}
-    - {t: LGUI, h: DEL}
+    - {t: DEL, h: LGUI}
   NumSym:
   - [/, '7', '8', '9', '-', '~', '&', '*', '|', '`']
   - ['*', '4', '5', '6', +, \, $, '%', ^, ':']

@@ -246,13 +246,13 @@ rect.held.alternate { fill: #478583; }</style>
 </g>
 <g transform="translate(254, 236) rotate(15.0)" class="key keypos-31">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">LSHFT</text>
-<text x="0" y="24" class="key hold">SPACE</text>
+<text x="0" y="0" class="key tap">SPACE</text>
+<text x="0" y="24" class="key hold">LSHFT</text>
 </g>
 <g transform="translate(321, 246) rotate(30.0)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-42" width="52" height="85" class="key"/>
-<text x="0" y="0" class="key tap">LCTRL</text>
-<text x="0" y="40" class="key hold">TAB</text>
+<text x="0" y="0" class="key tap">TAB</text>
+<text x="0" y="40" class="key hold">LCTRL</text>
 </g>
 <g transform="translate(463, 246) rotate(-30.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-42" width="52" height="85" class="key"/>
@@ -266,8 +266,8 @@ rect.held.alternate { fill: #478583; }</style>
 </g>
 <g transform="translate(599, 228)" class="key keypos-35">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">LGUI</text>
-<text x="0" y="24" class="key hold">DEL</text>
+<text x="0" y="0" class="key tap">DEL</text>
+<text x="0" y="24" class="key hold">LGUI</text>
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="595" y="26" width="28" height="26" class="combo"/>
